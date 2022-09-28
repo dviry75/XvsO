@@ -24,6 +24,7 @@
             android:layout_width="130dp"
             android:layout_height="130dp"
             android:layout_marginLeft="3dp"
+            android:id="@+id/bt1"
             android:backgroundTint="#B3D6FA"/>
         <View
             android:layout_width="5dp"
@@ -34,6 +35,8 @@
             android:layout_width="130dp"
             android:layout_height="130dp"
             android:layout_marginLeft="3dp"
+            android:id="@+id/bt2"
+
             android:backgroundTint="#B3D6FA"/>
         <View
             android:layout_width="5dp"
@@ -43,6 +46,44 @@
         <Button
             android:layout_width="130dp"
             android:layout_height="130dp"
+            android:id="@+id/bt3"
+            android:layout_marginLeft="3dp"
+            android:backgroundTint="#B3D6FA"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="130dp"
+            android:id="@+id/bt4"
+            android:layout_height="130dp"
+            android:layout_marginLeft="3dp"
+            android:backgroundTint="#B3D6FA"/>
+        <View
+            android:layout_width="5dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="3dp"
+            android:background="@color/black"/>
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:id="@+id/bt5"
+            android:layout_marginLeft="3dp"
+            android:backgroundTint="#B3D6FA"/>
+        <View
+            android:layout_width="5dp"
+            android:layout_marginLeft="3dp"
+            android:layout_height="130dp"
+            android:background="@color/black"/>
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:id="@+id/bt6"
             android:layout_marginLeft="3dp"
             android:backgroundTint="#B3D6FA"/>
     </LinearLayout>
@@ -58,6 +99,7 @@
             android:layout_width="130dp"
             android:layout_height="130dp"
             android:layout_marginLeft="3dp"
+            android:id="@+id/bt7"
             android:backgroundTint="#B3D6FA"/>
         <View
             android:layout_width="5dp"
@@ -67,6 +109,7 @@
         <Button
             android:layout_width="130dp"
             android:layout_height="130dp"
+            android:id="@+id/bt8"
             android:layout_marginLeft="3dp"
             android:backgroundTint="#B3D6FA"/>
         <View
@@ -78,47 +121,23 @@
             android:layout_width="130dp"
             android:layout_height="130dp"
             android:layout_marginLeft="3dp"
+            android:id="@+id/bt9"
             android:backgroundTint="#B3D6FA"/>
     </LinearLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="5dp"
-        android:background="@color/black"/>
-    <LinearLayout
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <Button
-            android:layout_width="130dp"
-            android:layout_height="130dp"
-            android:layout_marginLeft="3dp"
-            android:backgroundTint="#B3D6FA"/>
-        <View
-            android:layout_width="5dp"
-            android:layout_height="130dp"
-            android:layout_marginLeft="3dp"
-            android:background="@color/black"/>
-        <Button
-            android:layout_width="130dp"
-            android:layout_height="130dp"
-            android:layout_marginLeft="3dp"
-            android:backgroundTint="#B3D6FA"/>
-        <View
-            android:layout_width="5dp"
-            android:layout_marginLeft="3dp"
-            android:layout_height="130dp"
-            android:background="@color/black"/>
-        <Button
-            android:layout_width="130dp"
-            android:layout_height="130dp"
-            android:layout_marginLeft="3dp"
-            android:backgroundTint="#B3D6FA"/>
-    </LinearLayout>
+        android:text=" "
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvwin"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="horizontal"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="50dp"
         android:layout_height="80dp">
 
 
@@ -127,30 +146,39 @@
             android:layout_height="60dp"
             android:text="o"
             android:textSize="25sp"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="60dp"
+            android:id="@+id/stO"
             android:textColor="@color/white"
             android:backgroundTint="#112233"/>
         <Button
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:text="X"
+            android:id="@+id/stX"
             android:textSize="25sp"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="30dp"
             android:textColor="@color/white"
             android:backgroundTint="#112233"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="right"
-            android:text="מתחיל?"
+            android:text="מי מתחיל?"
             android:textColor="@color/black"
             android:textSize="30sp" />
     </LinearLayout>
-
-
-
-
-
-
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:id="@+id/tvwinO"
+        android:text="הo ניצח: "/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:id="@+id/tvwinX"
+        android:text="הx ניצח: "/>
 </LinearLayout>
