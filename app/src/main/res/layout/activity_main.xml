@@ -142,12 +142,21 @@
 
 
         <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="חדש"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/newS"
+            android:textColor="@color/white"
+            android:backgroundTint="#112233"/>
+        <Button
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:text="o"
-            android:textSize="25sp"
-            android:layout_marginLeft="60dp"
             android:id="@+id/stO"
+            android:textSize="25sp"
+            android:layout_marginLeft="20dp"
             android:textColor="@color/white"
             android:backgroundTint="#112233"/>
         <Button
@@ -156,7 +165,7 @@
             android:text="X"
             android:id="@+id/stX"
             android:textSize="25sp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="20dp"
             android:textColor="@color/white"
             android:backgroundTint="#112233"/>
         <TextView
@@ -165,7 +174,9 @@
             android:gravity="right"
             android:text="מי מתחיל?"
             android:textColor="@color/black"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            />
+
     </LinearLayout>
     <TextView
         android:layout_width="match_parent"
@@ -180,5 +191,6 @@
         android:textSize="25sp"
         android:textColor="@color/black"
         android:id="@+id/tvwinX"
-        android:text="הx ניצח: "/>
+        android:text="הx ניצח: "
+        />
 </LinearLayout>
