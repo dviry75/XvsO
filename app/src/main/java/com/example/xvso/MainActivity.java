@@ -11,6 +11,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     TextView tvwin,tvo,tvX;
     boolean x,y;
     Button b[][] = new Button[2][2];
+    int Ixo [] = new int [2];
+    int Jxo [] = new int [2];
     Button bsO ,bsX,restart;
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +41,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tvwin = (TextView) findViewById(R.id.tvwin);
         tvo = (TextView) findViewById(R.id.tvwinO);
         tvX = (TextView) findViewById(R.id.tvwinX);
+        for(int i=0;i<=Ixo.length;i++){
+            Ixo[i]=0;
+        }
+        for(int i=0;i<=Jxo.length;i++){
+            Jxo[i]=0;
+        }
     }
     public void onClick(View v) {
         if(v == bsX)
@@ -58,9 +66,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             }
                             if(g == t){
                                 b[i][j].setText("x");
+                                Ixo[i]++;
+                                Jxo[j]++;
+                                if(Ixo[i] ==3 || Jxo[i]==3){
+                                    tvwin.setText("שחקן הX ניצח");
+                                }
+
                             }
-                            if(g <= t){
+                            else if(g <= t){
                                 b[i][j].setText("o");
+                                Ixo[i]--;
+                                Jxo[j]--;
+                                if(Ixo[i] ==-3 || Jxo[i]==-3){
+                                    tvwin.setText("שחקן הo ניצח");
+                                }
+
                             }
                         }
                     }
@@ -85,9 +105,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             }
                             if(g <= t){
                                 b[i][j].setText("x");
+                                Ixo[i]++;
+                                Jxo[j]++;
                             }
-                            if(g == t){
+                            else if(g == t){
                                 b[i][j].setText("o");
+                                Ixo[i]--;
+                                Jxo[j]--;
                             }
                         }
                     }
